@@ -273,6 +273,23 @@ a:hover {
     margin-top: 80px;
 }
 
+.quote {
+    padding-bottom: 50px;
+}
+.quote blockquote {
+    margin: 0;
+    border: 0;
+}
+.quote p{
+    width: 535px;
+    font-size: 115%;
+    line-height: 22px;
+    margin: 0 auto;
+}
+.quote figcaption{
+    font-size: 140%;
+}
+
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -332,6 +349,14 @@ a:hover {
 .navbar-nav .open .dropdown-menu > li > a {
     text-align: inherit;
 }
+.btn:focus-visible {
+    border: 3px solid black;
+    transition: all 1s;
+}
+.btn:not(:focus-visible) {
+    outline: none;
+}
+
 
 .nav > li a:hover,
 .nav > li a:focus {
@@ -894,6 +919,12 @@ h4 {
     figure img {
         width: 90%;
         padding: 0 0 0 10%;
+    }
+    .quote blockquote, .quote p {
+        padding: 0;
+    }
+    .quote p{
+        width: 90%;
     }
     .page-container {
         overflow-x: hidden;
