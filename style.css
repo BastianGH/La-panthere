@@ -676,7 +676,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -767,6 +767,7 @@ h4 {
 
 .bgc-dark-slate-blue {
     background-color: #364577;
+    padding: 20px 0;
 }
 
 .bgc-atomic-tangerine {
@@ -774,7 +775,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white !important;
 }
 
 .btn-atomic-tangerine {
@@ -889,6 +890,10 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    figure img {
+        width: 90%;
+        padding: 0 0 0 10%;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -916,9 +921,6 @@ h4 {
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
-    }
-    .bloc .container {
-        padding: 20px 0 0;
     }
     .site-navigation {
         position: inherit;
