@@ -100,10 +100,6 @@ a:hover {
     background-attachment: fixed;
 }
 
-.d-bloc {
-    color: rgba(255, 255, 255, .7);
-}
-
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
@@ -317,16 +313,6 @@ a:hover {
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
-}
-
-.navbar-brand img {
-    max-height: 200px;
-    margin: 0 5px 0 0;
-    display: inline;
-}
-
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
 }
 
 .nav-center .navbar-brand img {
@@ -664,18 +650,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
 a {
-    font-family: "helvetica";
-    font-weight: 400;
     color: black !important;
 }
 
@@ -791,10 +766,6 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
     background-color: #F3976C;
 }
@@ -873,13 +844,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -897,10 +868,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -909,8 +876,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -999,10 +964,6 @@ h4 {
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
     }
     .navbar-header {
         width: 100%;
